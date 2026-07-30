@@ -23,6 +23,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - run: pnpm install --frozen-lockfile
+      - run: npm pkg set version="${GITHUB_REF_NAME#v}"
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test

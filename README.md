@@ -60,7 +60,7 @@ pnpm test       # vitest run
 pnpm build      # tsc -p tsconfig.build.json -> dist/
 ```
 
-CI runs typecheck, lint, and the test suite on every push to `main` and on every pull request (`.github/workflows/test.yml`). Publishing to npm happens via `.github/workflows/publish.yml`, triggered by pushing a `v*.*.*` tag. Dependabot keeps dependencies and workflow actions up to date (`.github/dependabot.yml`).
+CI runs typecheck, lint, and the test suite on every push to `main` and on every pull request (`.github/workflows/test.yml`). Every push to `main` also bumps `package.json`'s patch version and commits it back (`.github/workflows/bump-version.yml`). Publishing to npm happens via `.github/workflows/publish.yml`, triggered by pushing a `v*.*.*` tag — the published version is taken from the tag itself (not from `package.json`), so tagging is what actually decides a release's version. Dependabot keeps dependencies and workflow actions up to date (`.github/dependabot.yml`).
 
 ## License
 
