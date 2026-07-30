@@ -40,7 +40,7 @@
     "time",
     "validator"
   ],
-  "author": "Kev Aldasoro",
+  "author": "Andrew Aldasoro",
   "license": "ISC",
   "packageManager": "pnpm@11.16.0",
   "devDependencies": {
