@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewaldasoro/cron-expression-validator.git"
+    "url": "git+https://github.com/andrewaldasoro/cron-quartz-validator.git"
   },
-  "homepage": "https://github.com/andrewaldasoro/cron-expression-validator#readme",
+  "homepage": "https://github.com/andrewaldasoro/cron-quartz-validator#readme",
   "bugs": {
-    "url": "https://github.com/andrewaldasoro/cron-expression-validator/issues"
+    "url": "https://github.com/andrewaldasoro/cron-quartz-validator/issues"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

@@ -1,7 +1,7 @@
 # cron-quartz-validator
 
 [![npm version](https://img.shields.io/npm/v/cron-quartz-validator.svg)](https://www.npmjs.com/package/cron-quartz-validator)
-[![Test](https://github.com/andrewaldasoro/cron-expression-validator/actions/workflows/test.yml/badge.svg)](https://github.com/andrewaldasoro/cron-expression-validator/actions/workflows/test.yml)
+[![Test](https://github.com/andrewaldasoro/cron-quartz-validator/actions/workflows/test.yml/badge.svg)](https://github.com/andrewaldasoro/cron-quartz-validator/actions/workflows/test.yml)
 [![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![license](https://img.shields.io/npm/l/cron-quartz-validator.svg)](./LICENSE)
 
@@ -15,7 +15,7 @@ npm install cron-quartz-validator
 
 ## Usage
 
-**`validateCronExpression`** takes a *string* (the cron expression) and returns `{ valid: boolean, errors: string[] }`:
+**`validateCronExpression`** takes a _string_ (the cron expression) and returns `{ valid: boolean, errors: string[] }`:
 
 ```ts
 import { validateCronExpression } from "cron-quartz-validator";
