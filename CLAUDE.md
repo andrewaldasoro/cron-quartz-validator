@@ -15,7 +15,7 @@ pnpm i              # install dependencies
 pnpm test           # run the Vitest suite once
 pnpm test:watch     # run Vitest in watch mode
 pnpm typecheck      # tsc --noEmit
-pnpm lint           # eslint . (flat config in eslint.config.mjs)
+pnpm lint           # oxlint .
 ```
 
 ## Architecture
@@ -33,4 +33,4 @@ Fixed relative to the original class-based version (previously undocumented bugs
 
 ## Style
 
-ESLint uses the flat config in `eslint.config.mjs`: `@eslint/js` recommended + `typescript-eslint` recommended, no project-specific rule overrides.
+Linting is [oxlint](https://oxc.rs/) (Rust-based, no config file, default rule set) — switched from ESLint/typescript-eslint because typescript-eslint has no release supporting TypeScript 7.x.
